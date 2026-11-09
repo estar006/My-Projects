@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My To-Do List</title>
+    <style>
+       .container {
+        background-color: grey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    margin: 50px;
+       }  
+       input[type="text"] {
+        padding: 10px;
+        margin: 5px 0;
+        border: none;
+        border-radius: 5px;
+      }
+      button {
+        padding: 10px 15px;
+        margin: 5px 0;
+        border: none;
+        border-radius: 5px;
+        background-color: darkgrey;
+        color: white;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: grey;
+      }
+    </style>
+</head>
+
+<body>
+<p id="demo"></p>
+
+<div class="container">
+    <h1>My To-Do List</h1>
+
+    <p>Organize your day, one task at a time.</p>
+
+    <h2>Add a New Task</h2>
+
+    <input id="taskinput" 
+        type="text" 
+        placeholder="Enter your task">
+
+    <button id="addButton">Add Task</button>
+    <button id="clearButton">Clear All</button>
+<h2>My daily tasks</h2>
+
+<ul id="tasklist">
+
+</ul>
+</div>
+<script>
+    const taskinput = document.getElementById("taskinput");
+    const addButton = document.getElementById("addButton");
+    const tasklist = document.getElementById("tasklist");
+const clearButton = document.getElementById("clearButton");
+
+
+    addButton.addEventListener("click",function(){
+        
+
+    const tasktext = taskinput.value.trim();
+
+    if(tasktext === ""){
+        alert("please enter task");
+        return;
+    }
+    const li = document.createElement("li");
+const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    li.textContent = tasktext;
+
+    li.prepend(checkbox);
+    tasklist.appendChild(li);
+
+    taskinput.value = "";
+    
+    });
+clearButton.addEventListener("click", function() {
+    tasklist.innerHTML = "";
+});
+</script>
+</body>
+
+</html>
