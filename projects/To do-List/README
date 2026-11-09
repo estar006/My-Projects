@@ -1,0 +1,43 @@
+# To-Do List App 📝
+
+A simple and beginner-friendly To-Do List application built to practise and strengthen my web development skills.
+
+## About the Project
+
+This project allows users to add tasks and display them on a webpage. It was developed as part of my journey towards becoming a professional web developer.
+
+## Technologies Used
+
+- HTML5 – Structure
+- CSS3 – Styling and layout
+- JavaScript – Functionality and DOM manipulation
+
+## Features
+
+- Add new tasks.
+- Display tasks dynamically on the webpage.
+- Simple and user-friendly interface.
+
+## What I Learned
+
+While building this project, I practised:
+
+- DOM manipulation.
+- JavaScript event listeners.
+- Handling user input.
+- Working with HTML elements using JavaScript.
+- Connecting HTML, CSS and JavaScript.
+
+## Future Improvements
+
+- Delete tasks.
+- Mark tasks as completed.
+- Save tasks using Local Storage.
+- Improve mobile responsiveness.
+
+## Author
+
+Esther Mukunya
+
+Aspiring Web Developer
+
